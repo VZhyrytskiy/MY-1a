@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flex > div {
+  min-width: 300px;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.flex2 > div {
+  min-width: 300px;
+}
+
