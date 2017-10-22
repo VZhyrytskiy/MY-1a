@@ -6,3 +6,4 @@ export * from './contacts/contacts.component';
 export * from './teachers/teachers.component';
 export * from './media/media.component';
 export * from './english-tasks/english-tasks.component';
+export * from './home-tasks/home-tasks.component';

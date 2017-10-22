@@ -9,6 +9,7 @@ import {
   HomeComponent, EnglishTasksComponent, TeachersComponent, MediaComponent,
   ContactsComponent, ScheduleComponent, ParentsCommitteeComponent, PageNotFoundComponent
 } from './components';
+import { HomeTasksComponent } from './components/home-tasks/home-tasks.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {
     ContactsComponent,
     TeachersComponent,
     MediaComponent,
-    EnglishTasksComponent
+    EnglishTasksComponent,
+    HomeTasksComponent
   ],
   imports: [
     BrowserModule,

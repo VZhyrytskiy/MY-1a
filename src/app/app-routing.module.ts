@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import {
-  HomeComponent, EnglishTasksComponent, MediaComponent, TeachersComponent,
+  HomeComponent, EnglishTasksComponent, HomeTasksComponent, MediaComponent, TeachersComponent,
   ContactsComponent, ScheduleComponent, ParentsCommitteeComponent, PageNotFoundComponent
 } from './components';
 
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'lessons/english',
     component: EnglishTasksComponent
+  },
+  {
+    path: 'lessons/read-write-math',
+    component: HomeTasksComponent
   },
   {
     path: 'contacts',
