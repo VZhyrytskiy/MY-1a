@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import {
-  HomeComponent, EnglishTasksComponent, TeachersComponent, MediaComponent,
+  HomeComponent, HomeTasksComponent, EnglishTasksComponent, TeachersComponent, MediaComponent,
   ContactsComponent, ScheduleComponent, ParentsCommitteeComponent, PageNotFoundComponent
 } from './components';
-import { HomeTasksComponent } from './components/home-tasks/home-tasks.component';
+import { EnglishHomeTasksService } from './components/english-tasks/english-home-tasks.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +28,12 @@ import { HomeTasksComponent } from './components/home-tasks/home-tasks.component
   imports: [
     BrowserModule,
     RouterModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    EnglishHomeTasksService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
